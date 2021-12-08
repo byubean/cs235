@@ -1,0 +1,141 @@
+Hash Tables (9.3)
+
+BSTs provide Set operations (add/remove/find) in O(log n) time.
+Hashing is able do the operations in O(1) time in some cases.
+How can you find something in a large set in constant time?
+
+
+Suppose you need to create a set of employee ID numbers.
+Each ID number is between 1 and 1000.
+
+How can you store the numbers so you can add/remove/find in O(1) time?
+	add(id)
+	remove(id)
+	find(id)
+
+Could you use this approach to store larger numbers?
+
+Suppose you are storing only 1000 different numbers,
+but the numbers range in value from 1 to 1000000.
+
+Would you make an array of size 1000000?
+
+Map the large numbers into numbers between 0 and 999.
+	23456
+	168421
+
+Could you use this approach to store items (like Strings) that are not numbers?
+
+Convert the strings to numbers.
+	"421"
+	"abba"
+
+What's a Hash Table?
+	an array used to store a collection of items
+	the items are stored at the index given by a hash function
+
+What's a Hash Function?
+	a function that maps an item into a number
+	the number is in the range of a valid array index
+	the function usually contains a mod by table size (x % tableSize)
+
+What's a Collision?
+	when two or more items hash to the same number
+	resolve with chaining, linear probing, or quadratic probing
+
+
+Chaining
+
+How do you resolve collisions using Chaining?
+	the hash table is an array of linked-lists
+	each list contains the items that hash to the same index
+
+Show the result of inserting 2, 7, 3, 8 into a hash table of size 5.
+
+How do you find an item in a hash table using Chaining?
+	use the hash function to select a list in the table
+	sequentially search the list for the item
+
+Show the result of finding 8 and 12 in the hash table.
+
+
+Classwork
+Show the result of inserting 7, 6, 1, 2, 9 into a hash table of size 4.
+
+
+Performance Analysis of Chaining
+
+What's the Load Factor of a hash table?
+	the number of items in the table divided by the table size
+	LoadFactor = n/m
+		n is the number of items in the table
+		m is the size of the array used for the table
+
+How does the Load Factor affect the performance of a hash table?
+
+How many compares are needed (on average) to find an item
+in a chaining hash table?
+
+	Compares = 1 + LoadFactor/2  (for a successful search)(Knuth, vol 3)
+		(the average number of items in each bucket is L)
+
+	1.25 compares when Load Factor is 0.5
+	1.50 compares when Load Factor is 1.0
+	2.00 compares when Load Factor is 2.0
+
+What's a good Load Factor to use with chaining?
+	1.0
+	lower doesn't significantly improve performance
+	higher can save space
+
+What's the Big-Oh bound of add/remove/find for a chaining hash table?
+	average-case is O(n/m)  (items distributed evenly over the buckets)
+	worst-case is O(n)      (all items hash to the same bucket)
+
+Which is better Hashing or AVL trees?
+	hashing is O(1)	    (average case)
+	trees are O(log n)  (worst case)
+	hashing is simpler
+	trees keep data sorted
+
+Hash Functions
+
+What are the characteristics of a good Hash Function?
+	1. gives a number between 0 and tableSize-1
+	2. easy and fast to compute
+	3. distributes items evenly throughout the hash table
+
+Would it make sense to use random numbers in a hash function
+to help ensure an even distribution of items?
+
+What's a typical hash function for integers?
+	value % tableSize
+
+A hash function for Strings must convert a String to a number.
+What's wrong with this code for converting a String to a number?
+
+How large can hashCode be for a string of 10 characters?
+What's true about hashCode for two strings like "bat" and "tab"?
+
+	unsigned hashCode( string item, unsigned tableSize ) {
+	    unsigned hashCode = 0;
+
+	    for (unsigned i = 0; i < item.length(); i++)
+	        hashCode = hashCode + item.at(i);
+
+	    return hashCode % tableSize;
+	}
+
+
+How is this hash function better than the previous one?
+
+	unsigned hashCode( string item, unsigned tableSize ) {
+	    unsigned hashCode = 0;
+
+	    for (unsigned i = 0; i < item.length(); i++)
+	        hashCode = hashCode * 31 + item.at(i);
+
+	    return hashCode % tableSize;
+
+	}
+

@@ -1,0 +1,112 @@
+Sorting
+
+What's Sorting?
+
+Why is Sorting Important?
+
+	1. people can process data better when it is sorted\
+		words in a dictionary
+		index of a book
+
+	2. some algorithms are faster when the input is sorted
+		binary search
+		finding duplicates
+
+Selection Sort (10.2)
+
+How does Selection Sort work?
+
+	keep a mark between the sorted and unsorted parts
+	the sorted part starts empty
+
+	find the smallest item in the unsorted part
+	swap it with the first item in the unsorted part
+
+	move the mark one place and repeat
+
+Show each step of Selection Sort on the List.
+	5 4 3 1 2
+
+Classwork
+You may work with a partner.
+
+Show each step of Selection Sort on the List.
+	5 2 7 3 4
+
+
+Selection Sort Code
+
+    for each i from 0 to size-2
+
+	min = i
+	for each j from i+1 to size-1
+	    if list[j] < list[min]
+	       min = j
+
+	swap list[i] and list[min]
+
+    end
+
+
+What's the running time for Selection Sort?
+
+Does the running time for Selection Sort depend on
+the kind of input you give it?
+
+DEMO	(selection sort on sorted, reverse, random data)
+
+
+Insertion Sort (10.4)
+
+How does Insertion Sort work?
+
+	keep a mark between the sorted and unsorted parts
+	the sorted part starts with the first item
+
+	remove the first item from the unsorted part
+	insert it into the sorted part
+
+	move the mark one place and repeat
+
+Show each step of Insertion Sort on the List.
+	5 2 7 3 4
+
+
+Classwork
+You may work with a partner.
+
+Show each step of Insertion Sort on the List.
+
+	8 5 2 7 3
+
+Insertion Sort Code
+
+  for each i from 1 to size-1
+
+    j = i
+    item = list[j]
+
+    while j > 0 and list[j-1] > item
+      list[j] = list[j-1];
+      j--;
+    end while
+
+    list[j] = item
+
+  end for
+
+
+What's the running time for Insertion Sort?
+
+Does the running time for Insertion Sort depend on
+the kind of input you give it?
+
+What kind of input is worst-case for Insertion Sort?
+
+What kind of input is best-case for Insertion Sort?
+
+How does Insertion Sort perform on random input?
+
+
+DEMO	(insertion sort on sorted, reverse, random data)
+

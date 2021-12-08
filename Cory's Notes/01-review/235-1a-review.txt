@@ -1,0 +1,105 @@
+
+Language Review
+
+Development Tools (P.1)
+
+
+What tools are used to write code?
+
+
+How do you use an editor or IDE to write code?
+
+DEMO	(write some simple code)
+
+
+How do you compile the code?
+
+DEMO	(compile the code)
+
+
+How do you run the code?
+
+DEMO	(run the code)
+
+
+Command-line Arguments (P.9)
+
+What are command-line arguments?
+
+How do you access command-line arguments in a program?
+
+DEMO	(print the command line args)
+
+What are command-line arguments often used for?
+
+
+Input and Output (P.9)
+
+
+How do you read strings from a text file?
+
+DEMO	(read from a file)
+
+
+How do you add the strings to a list?
+
+DEMO	(add strings to a list)
+
+
+How do you sort the list?
+
+DEMO	(sort the list)
+
+
+How do you write the list to a text file?
+
+DEMO	(write to a file)
+
+
+How do you read lines from a text file?
+
+DEMO	(read lines from a file)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How do you convert from an int to a string?
+
+DEMO	(int to string)
+
+
+How do you convert from a string to an int?
+
+DEMO	(string to int)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

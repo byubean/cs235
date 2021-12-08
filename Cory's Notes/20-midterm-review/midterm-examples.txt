@@ -1,0 +1,396 @@
+
+Suppose you have been asked to implement software solutions for each
+of the applications listed below. For each application, indicate which
+data type would be most effective in solving the problem.
+
+
+An inventory application that records the quantity of each item stored
+in the inventory.
+
+A hard drive that receives a number of block read requests and
+optimizes head movement by selecting the next request to process based
+on which block address is closest to the current head position.
+
+A classroom scheduling application that allows the user to find the
+course number, name, section number, and instructor for a given
+classroom and time of day.
+
+An application that stores a number of tasks that need to be done and
+allows the user to insert, delete, and edit tasks while keeping the
+tasks stored in the order given by the user.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Give the tight Big-Oh bound for the running time (as a function of n)
+of each of the following code fragments.
+
+
+int doit(int n) {
+    int sum = 0;
+    for (int i = 1; i < n; i *= 10)
+	sum += i;
+    return sum;
+}
+
+int again(int n) {
+    int sum = 0;
+    for (int i = 10; i > 0; i /= 4)
+	sum++;
+    return sum;
+}
+
+int more(int n) {
+    int sum = 0;
+    for (int i = n; i > 0; i -= 2)
+	if (i % 4 == 2)
+	    for (int i = 0; i < n; i++)
+		sum++;
+	else
+	    sum++;
+    return sum;
+}
+
+(assume print(int) is O(1))
+
+void print(int m[][], int n) {
+    for (int i = 0; i < n; i++) {
+	for (int j = 0; j < n; j++) {
+	    print(m[i][j]);
+	}
+    }
+}
+
+int less(int n) {
+    for (int i = 0; i*i < n; i++)
+	sum++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Algorithm A is O(logn) and it completes a problem of size 1024 in 2 seconds.
+How long will algorithm A take to complete a problem of size 4096?
+How large a problem can be solved in 4 seconds using algorithm A?
+
+Algorithm B is O(2^n) and it completes a problem of size 1024 in 2 seconds.
+How long will algorithm B take to complete a problem of size 4096?
+How large a problem can be solved in 4 seconds using algorithm B?
+
+Algorithm D is O(1) and it completes a problem of size 1024 in 2 seconds.
+How long will algorithm D take to complete a problem of size 4096?
+How large a problem can be solved in 4 seconds using algorithm D?
+
+Algorithm E is O(n^2) and it completes a problem of size 1024 in 2 seconds.
+How long will algorithm E take to complete a problem of size 4096?
+How large a problem can be solved in 4 seconds using algorithm E?
+
+Algorithm F is O(n^3) and it completes a problem of size 1024 in 2 seconds.
+How long will algorithm F take to complete a problem of size 4096?
+How large a problem can be solved in 4 seconds using algorithm F?
+
+Algorithm C is O(n) and it completes a problem of size 1024 in 2 seconds.
+How long will algorithm C take to complete a problem of size 4096?
+How large a problem can be solved in 4 seconds using algorithm C?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The following table gives measured times for program A on a number of
+problem sizes. What big-oh function best describes the time for program A?
+
+
+size time
+ 100  10
+ 200  10
+ 400  10
+ 800  10
+1600  10
+
+ 128 7
+ 256 8
+ 512 9
+1024 10
+2048 11
+
+1   10
+2   100
+3   1000
+4   10000
+5   100000
+
+10   1110
+20   8420
+30   27930
+40   65640
+50   127550
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suppose the following list is given as input to binary search (with
+three-way compares) and the search is looking for the value 77.
+Give the part of the list in which the algorithm is still searching
+after each major step of the binary search algorithm,
+
+
+11 15 16 22 33 44 48  55  58 62 66 72 77 88 99
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Consider the following program.
+
+Stack S;
+List L;
+S.push(4);
+S.push(2);
+S.push(1);
+S.push(8);
+while (!S.isEmpty())
+    L.append(S.pop());
+
+What are the contents of the list L at the end of the program?
+
+
+
+Consider the following program.
+
+Queue Q;
+List L;
+Q.add(4);
+Q.add(2);
+Q.add(1);
+Q.add(8);
+while (!Q.isEmpty())
+    L.append(Q.remove());
+
+What are the contents of the list L at the end of the program?
+
+
+
+Consider the following program.
+
+PriorityQueue Q;
+List L;
+Q.add(4);
+Q.add(2);
+Q.add(1);
+Q.add(8);
+while (!Q.isEmpty())
+    L.append(Q.remove());
+
+What are the contents of the list L at the end of the program?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suppose the following list is given as input to insertion sort.
+Give the content of the list after each major step of insertion sort.
+
+
+8 7 2 9 4 8 5 4 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suppose the following list is given as input to selection sort.
+Give the content of the list after each major step of selection sort.
+
+
+8 7 2 9 4 8 5 4 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suppose the following list is given as input to merge sort.
+Give the lists that result from each split and merge step of merge sort.
+
+
+8 2 7 4 4 8 5 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suppose the following list is given as input to quick sort.
+Give the lists that result from each partition and concatenate step of quick sort.
+Always use the item in the middle position as the quick-sort pivot.
+Use the simple partitioning algorithm (not the in-place partitioning algorithm).
+
+
+1 9 8 3 3 2 5 4 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Show the steps of the quicksort in-place partitioning algorithm on the list.
+
+
+1 9 8 3 3 2 5 4 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If log10(40) is 1.6,
+what is log10(4)?
+what is log10(25)?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,209 @@
+Binary Heaps (8.5)
+
+What's a Binary Heap?
+	1. a complete binary tree
+	2. obeys the Heap order property
+
+What's a Complete Binary Tree?
+	1. all levels except the bottom are completely filled
+	2. nodes at the bottom level are as far left as possible
+
+Draw an example of a complete binary tree on the board.
+
+What's the height of a complete binary tree?
+
+What's the Heap order property?
+	for every node n
+	the value of n's parent is <= the value of n
+
+Draw an example of a Heap on the board.
+
+	     4
+	    / \
+	   4   8
+	  / \
+	 7   5
+
+
+Inserting Into a Heap
+
+How do you Insert an item into a Heap?
+	1. add an item at the next position at the bottom of the heap
+	2. percolate up until the order is correct
+
+How do you percolate up?
+	1. compare an item with its parent
+	2. swap if the parent is larger
+
+Show the result of inserting 8 into the Heap.
+
+	     4
+	    / \
+	   4   8
+	  / \
+	 7   5
+
+
+Show the result of inserting 3 into the Heap.
+
+	      3
+	     / \
+	    /   \
+	   3     4
+	  / \   /
+	 9   3 5
+
+
+Show the result of inserting 2 into the Heap.
+
+	     4
+	    / \
+	   5   4
+	  /
+	 5
+
+
+Classwork:
+
+Show the result of inserting 8 into the Heap.
+
+	   8
+	  / \
+	 8   8
+
+Show the result of inserting 4 into the Heap.
+
+	    6
+	   / \
+	  7   9
+	 /
+	8
+
+Show the result of inserting 2 into the Heap.
+
+	     4
+	    / \
+	   4   8
+	  / \
+	 7   5
+
+Show the result of inserting 5, 2, 8, 3, 1, 9, 6, 4 into an empty Heap.
+
+Classwork.  You may work with a partner.
+
+Show the result of inserting 5, 3, 8, 1, 7, 4, 6, 2 into an empty Heap.
+
+What's the Big-Oh for Insert?
+	O(log n) in the worst case
+	O(1) in the average case
+
+
+Removing From a Heap
+
+How do you Remove an item from a Heap?
+	1. replace the root with the last item
+	2. percolate down until the order is correct
+
+How do you percolate down?
+	1. compare an item with its smaller child
+	2. swap if the parent is larger
+
+Show the result of removing an item from the Heap.
+
+	     4
+	    / \
+	   4   8
+	  / \
+	 7   5
+
+Show the result of removing an item from the Heap.
+
+	      3
+	     / \
+	    /   \
+	   3     4
+	  / \   /
+	 9   4 5
+
+Show the result of removing an item from the Heap.
+
+	      4
+	     / \
+	    /   \
+	   5     4
+	  / \   / \
+	 9   6 5   8
+
+Classwork.  You may work with a partner.
+
+Show the result of removing an item from the Heap.
+
+	      4
+	     / \
+	    /   \
+	   4     4
+	  / \   / \
+	 4   4 4   4
+
+Show the result of removing an item from the Heap.
+
+	    6
+	   / \
+	  7   9
+	 /
+	8
+
+Show the result of removing an item from the Heap.
+
+	     2
+	    / \
+	   4   3
+	  / \
+	 7   5
+
+What's the Big-Oh for Remove?
+	O(log n) in the worst case
+	O(log n) in the average case
+
+Implementing a Heap
+
+How is a Binary Heap typically implemented?
+	because the tree is complete,
+	it can be stored efficiently in an array
+
+How do you store a Tree in an array?
+	store the nodes in level order
+
+	1-based indexing
+	the root is at A[1]
+	the children of the root are at A[2] and A[3]
+
+	0-based indexing
+	the root is at A[0]
+	the children of the root are at A[1] and A[2]
+
+Draw the tree diagram for the Binary Heap on the board.
+	4 4 6 5 4 9 8 5 8
+
+Where can you find the children of the node at A[i]?
+	1-based indexing
+	the left child of the node at i is at 2i
+	the right child of the node at i is at 2i+1
+
+	0-based indexing
+	the left child of the node at i is at 2i+1
+	the right child of the node at i is at 2i+2
+
+Where can you find the parent of the node at A[i]?
+	1-based indexing
+	the parent of the node at i is at i/2
+
+	0-based indexing
+	the parent of the node at i is at (i-1)/2
+
+Show the result of inserting 2 into the Heap.
+	4 4 6 5 4 9 8 5 8
+
+Show the result of removing an item from the Heap.
+	3 4 3 5 4 6 8 5 8
+

@@ -1,0 +1,165 @@
+Trees (8.1)
+
+Draw an example of a tree on the board.
+
+
+		 A
+	       /   \
+	      B	    C
+	     /|\   /|\
+	    D E F G H I
+	    |  / \  |
+	    J K   L M
+	      |
+	      N
+
+
+What's a Tree?
+	a nonlinear or hierarchical structure made from
+	a set of nodes and
+	a set of directed links (links connect pairs of nodes)
+	one node is the root
+
+What's the key defining characteristic of a Tree?
+	every node (except the root) has exactly one parent
+
+What are some applications of trees?
+	family trees
+	XML documents (DOM)
+	file folders
+
+Trees are recursive
+	a tree is a root node connected to
+	zero or more subtrees
+
+Classwork
+You may work with a partner.
+Answer the questions about the tree.
+
+		 A
+	       /   \
+	      B	    C
+	     /|\   /|\
+	    D E F G H I
+	    |  / \  |
+	    J K   L M
+	      |
+	      N
+
+What's the root node?
+What are the leaf nodes?
+
+What's the parent of node K?
+What are the children of node C?
+What are the siblings of node E?
+
+What are the ancestors of node G?
+What are the descendants of node F?
+
+Classwork
+You may work with a partner.
+Answer the questions about the tree.
+
+		 A
+	       /   \
+	      B	    C
+	     /|\   /|\
+	    D E F G H I
+	    |  / \  |
+	    J K   L M
+	      |
+	      N
+
+What's the depth of node K?
+What's the depth of node C?
+What's the depth of the root?
+
+What's the height of node H?
+What's the height of node B?
+What's the height of a leaf node?
+What's the height of the tree?
+
+Classwork
+You may work with a partner.
+Answer the questions about the tree.
+
+		 A
+	       /   \
+	      B	    C
+	     /|\   /|\
+	    D E F G H I
+	    |  / \  |
+	    J K   L M
+	      |
+	      N
+
+What's the size of the subtree rooted at node C?
+What's the size of the tree?
+
+How many nodes are there in the tree?
+How many edges are there in the tree?
+How many edges are there in a tree with N nodes?
+
+Tree Implementation
+What's stored in each tree node object?
+
+How do you store the links to the children?
+
+Draw the tree with first-child/next-sibling links.
+
+	 A
+	 |
+	 B-------C
+	 |       |
+	 D-E-F   G-H-I
+	 |   |     |
+	 J   K-L   M
+	     |
+	     N
+
+Show the code for a first-child/next-sibling tree.
+
+
+Tree Traversal (8.2)
+
+What's a preorder traversal?
+
+List the nodes of the tree in preorder.
+
+		 A
+	       /   \
+	      B	    C
+	     /|\   /|\
+	    D E F G H I
+	    |  / \  |
+	    J K   L M
+	      |
+	      N
+
+
+Write the code for a preorder traversal.
+What's a postorder traversal?
+
+Classwork
+You may work with a partner.
+
+List the nodes of the tree in postorder.
+Write the code for a postorder traversal.
+
+		 A
+	       /   \
+	      B	    C
+	     /|\   /|\
+	    D E F G H I
+	    |  / \  |
+	    J K   L M
+	      |
+	      N
+
+
+Classwork
+You may work with a partner.
+
+Write a recursive method that computes the size of a tree.
+Write a recursive method that computes the height of a tree.
+

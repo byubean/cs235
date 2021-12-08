@@ -1,0 +1,100 @@
+Linear Probing (9.3)
+
+How do you insert an item in a hash table using Linear Probing?
+	sequentially scan the array until an empty cell is found
+	wrap-around from the last position to the first
+
+Show the result of inserting 2, 7, 3, 8 into a hash table of size 5.
+
+How do you find an item in a hash table using Linear Probing?
+	follow the same sequence as insert
+	if you reach an empty slot, the item is not in the table
+
+Show the result of finding 8 and 9 in the hash table.
+
+
+Classwork
+Show the result of inserting 7, 6, 1, 2 into a hash table of size 5.
+
+How do you delete an item from a hash table using Linear Probing?
+	you must use lazy deletion
+	mark cell, looks empty for insert, used for find
+
+
+Performance Analysis of Linear Probing
+
+What's the Load Factor of a hash table?
+	the number of items in the table divided by the table size
+
+	LoadFactor = n/m
+		n is the number of items in the table
+		m is the size of the array used for the table
+
+
+How many compares are needed (on average) to find an item
+in a linear-probing hash table?
+
+	Compares = 1/2 * (1 + 1/(1 - LoadFactor))  (Knuth, vol 3)
+					(for a successful search)
+
+	1.50 compares when Load Factor is 0.50
+	2.50 compares when Load Factor is 0.75
+	10.50 compares when Load Factor is 0.95
+		(what happens if Load Factor is 1.0)
+
+What's a good Load Factor to use with linear probing?
+	less than 0.50
+
+Rehashing
+
+What do you do when the Load Factor becomes too high?
+	grow the table (like an ArrayList)
+
+Do you copy each item from the old table to the same location in the new table?
+	no, the hash function is different because the table size is different
+	hash each item into the new table
+
+
+Quadratic Probing
+
+How do you insert an item in a hash table using Quadratic Probing?
+	scan cells 1, 4, 9, ... away from the original probe
+	if the hash function gives H, scan H+(i^2) instead of H+i
+
+Show the result of inserting 2, 7, 3, 8 into a hash table of size 5.
+
+
+Classwork
+You may work with a partner.
+
+Show the result of inserting 7, 6, 1, 2 into a hash table of size 5.
+
+Will Quadratic Probing find an empty cell?
+	if the table size is prime
+	and the load factor is <= 0.5
+	probes will be to different locations
+
+Why use Quadratic Probing rather than Linear Probing?
+	linear probing tends to create clusters of occupied cells
+	quadratic probing results in less clustering
+
+
+Double Hashing
+
+What's Double Hashing?
+	like linear probing
+	but a second hash function gives the amount to increment
+
+	H(x) + 0*H2(x)
+	H(x) + 1*H2(x)
+	H(x) + 2*H2(x)
+	...
+	H(x) + i*H2(x)
+
+Show the result of inserting 2, 7, 3, 8 into a hash table of size 5.
+(Use H(x) = x % 5 and H2(x) = x % 3 + 1.)
+
+
+Classwork
+Show the result of inserting 7, 6, 1, 2 into a hash table of size 5.
+(Use H(x) = x % 5 and H2(x) = x % 3 + 1.)

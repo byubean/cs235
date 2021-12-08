@@ -1,0 +1,118 @@
+
+Logarithms
+
+What are the values of the following Logarithms?
+	log10(1000)
+	log2(16)
+
+What's the Logarithm?
+What's the Base of the Logarithm?
+
+	if the log[b] of n is k, then b^k = n
+
+What's an easy way to approximate the log base 10 of n?
+	round n to the closest power of 10 and count the zeros
+
+What's an easy way to approximate the log base 2 of n?
+	count the number of bits needed to represent n in binary
+
+
+Classwork
+You may work with a partner.
+
+Give the approximate value of the log base 10 for each number.
+
+	123
+	9999
+	72457
+	2183746058
+
+Give the approximate value of the log base 2 for each number.
+
+	1000
+	1000*1000
+	1000*1000*1000
+
+	123
+	9999
+	72457
+	2183746058
+
+
+An important truth about logs.
+	log(a*b) = log(a) + log(b)
+
+How does log(n) compare to n for large values of n?
+
+How does log2(n) compare to log10(n) for various values of n?
+How does the number of bits in a binary number compare to
+the number of digits in an equivalent decimal number?
+
+	log2(n) is about 3.3 * log10(n)
+
+
+When logarithms are used in Big-Oh formulas,
+why is the base of the logarithm not given?
+
+Log's in Big-Oh's
+
+If you start with X = 1, how many times you can double X
+before X becomes greater than or equal to N?
+
+If you start with X = N, how many times you can cut X in half
+before X becomes less than or equal to 1?
+
+When you are analyzing code to find the Big-Oh,
+when do you use a logarithm in the Big-Oh formula?
+
+Classwork
+You may work together with a partner.
+
+Give the Big-Oh of the running time for each program fragment.
+
+
+	for ( int x = 1; x < n; x *= 2 )
+	    sum++;
+
+	for ( int i = 0; i < n; i++ )
+	    for ( int x = n; x > 1; x /= 2 )
+	        sum++;
+
+	for ( int x = n; x > 1; x /= 10 )
+	    sum++;
+
+	for ( int x = 1; x < n; x *= 10 )
+	    for ( int i = 0; i < n; i++ )
+	        sum++;
+
+
+
+Classwork
+You may work together with a partner.
+
+
+If an algorithm is O(log n) and it takes 1 second to solve a problem
+of size 10, how long will it take to solve a problem of size 1000?
+
+
+If an algorithm is O(n log n) and it takes 1 second to solve a problem
+of size 10, how long will it take to solve a problem of size 1000?
+
+
+If an algorithm is O(log n) and it takes 10 seconds to solve a problem
+of size 100, how large a problem can be solved in 1000 seconds?
+
+
+Where does O(log n) fall between O(1) and O(n)?
+
+Is it halfway between?
+Is it closer to O(1)?
+Is it closer to O(n)?
+
+
+Where does O(n log n) fall between O(n) and O(n^2)?
+
+Is it halfway between?
+Is it closer to O(n)?
+Is it closer to O(n^2)?
+

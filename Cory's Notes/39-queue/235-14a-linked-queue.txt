@@ -1,0 +1,162 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Linked List Queue (6.3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Draw a diagram of a Linked-List Queue object on the board.
+
+What instance variables are needed inside a Linked-List Queue object?
+
+Which end of the list should be the front/back of the queue?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How does the add method work?
+
+Show how add works on the diagram on the board.
+
+Write the code for the add method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How does the remove method work?
+
+Show how remove works on the diagram on the board.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Classwork
+You may work with a partner.
+
+Write the code for the remove method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What's the Big-Oh bound for add and remove?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Memory Management
+
+
+Why does the Queue need a destructor?
+
+Write the code for the destructor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

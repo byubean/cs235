@@ -1,0 +1,153 @@
+Quick Sort (10.9)
+
+How does Quick Sort work?
+
+	if the size of the List is at least 2
+	    select an item in the List to use as the pivot
+	    partition the List into small, equal, large Lists
+	       (small, equal, large compared to pivot)
+	    recursively sort small
+	    recursively sort large
+	    concatenate small, equal, and large into one list
+	end if
+
+Show the steps of Quick Sort on the List.
+Give the Lists after each partition and concatenate step.
+Use the item in the middle position as the pivot.
+	[9 8 1 6 4 3 7 5 2]
+
+
+Classwork
+You may work with a partner.
+
+Show the steps of Quick Sort on the List.
+Give the Lists after each partition and concatenate step.
+Use the item in the middle position as the pivot.
+
+	[4 7 2 3 5 8 1 2 9]
+
+Quick Sort Code
+
+
+quickSort ( list ) {
+
+  if ( list.size > 1 ) {
+
+    partition( list, small, equal, large );
+
+    quickSort( small );
+    quickSort( large );
+
+    concat( small, equal, large, list );
+
+  }
+
+}
+
+partition( list, small, equal, large ) {
+
+  pivot = item in middle position of list
+
+  for each item in list
+    if item is smaller than pivot
+      add item to small
+    else if item is larger than pivot
+      add item to large
+    else
+      add item to equal
+
+}
+
+concat( small, equal, large, list ) {
+
+  for each item in small
+    add item to list
+
+  for each item in equal
+    add item to list
+
+  for each item in large
+    add item to list
+
+}
+
+What's the running time for partition?
+What's the running time for concat?
+What's the running time for Quick Sort?
+
+Does the running time for Quick Sort depend on
+the kind of input you give it?
+
+DEMO	(quick sort on sorted, reverse, random data)
+
+
+Selecting the Pivot
+
+
+DEMO	(quick sort with bad pivots)
+
+
+What's the Best-Case partitioning for Quick Sort?
+
+How deep is the recursion in this case?
+
+What's the Big-Oh for Quick Sort in the Best-Case?
+
+
+What's the Worst-Case partitioning for Quick Sort?
+
+How deep is the recursion in this case?
+
+What's the Big-Oh for Quick Sort in the Worst-Case?
+What's the Big-Oh for Quick Sort in the Average-Case?
+
+What's the result of using the First or Last item as the Pivot?
+What's the result of using the Middle item as the Pivot?
+
+Median Of Three
+
+
+What's the median of a list of numbers?
+
+Why not use the median value from the List as the Pivot?
+
+How can you estimate the median?
+
+Find the Median-of-three for each list of numbers.
+	8 5 4 6 2 3 1
+	4 9 3 5 7 6 2
+
+Quick Sort Partitioning
+
+Why is the Quick Sort demo as slow as Merge Sort?
+
+How does partitioning really work?
+	1. swap the pivot with the first item
+	2. scan from left to right for a large item
+	   scan from right to left for a small item
+	   if the large item is to the left of the small item
+	       swap the two items and repeat
+	3. swap the pivot with the small item
+
+Show each step of partitioning on the List.
+	1 8 5 9 4 3 7 2 6
+
+Classwork
+You may work with a partner.
+
+Show each step of partitioning on the List.
+	2 7 2 5 3 9 1 2 8
+
+
+DEMO	(fast quick sort on sorted, reverse, random data)
+
+Quick Sort vs Merge Sort
+
+What advantage does Quick Sort have over Merge Sort?
+	quick sort is faster than merge sort
+	partition can be done in-place, without using extra space
+	merge sort requires twice the space
+
+What advantage does Merge Sort have over Quick Sort?
+	merge sort is O(n log n) in the worst case
+

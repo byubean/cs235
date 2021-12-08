@@ -1,0 +1,3 @@
+Bean 7
+Smith 54
+Schwartz 0

@@ -1,0 +1,231 @@
+Binary Search Trees (8.4)
+
+What's a Binary Search Tree?
+
+What's the average-case time for finding an item in a List?
+	O(n)
+
+What's the average-case time for finding an item in a BST?
+	O(log n)
+
+How many steps are needed to find an item in a 1,000,000-item List?
+	an average of 500,000 steps
+
+How many steps are needed to find an item in a 1,000,000-item BST?
+	an average of 20 steps
+
+
+The BST Order Property
+
+What's the defining property of a Binary Search Tree?
+	for every node in the tree
+	  items in the left subtree are smaller
+	  items in the right subtree are larger
+
+Draw an example BST on the board.
+
+	     5
+	    / \
+	   3   6
+	  / \   \
+	 1   4   9
+	  \     /
+	   2   7
+	        \
+		 8
+
+Classwork
+You may work with a partner.
+
+Is the tree a Binary Search Tree?
+If not, identify where the BST order property is violated.
+
+	     5
+	    / \
+	   3   8
+	  / \   \
+	 1   4   9
+	  \   \
+	   2   6
+
+	     5
+	    / \
+	   4   8
+	  /   / \
+	 2   6   9
+	      \
+	       7
+
+Searching
+
+How do you find an item in a Binary Search Tree?
+	compare the item to the root
+	if smaller, repeat in the left subtree
+	if larger, repeat in the right subtree
+
+Show the steps of finding 7 in the BST.
+Show the steps of finding 3 in the BST.
+
+	     5
+	    / \
+	   4   8
+	  /   / \
+	 2   6   9
+	      \
+	       7
+
+How do you find the smallest or largest item in a Binary Search Tree?
+
+Show the steps of finding the smallest item in the BST.
+Show the steps of finding the largest item in the BST.
+
+	     5
+	    / \
+	   3   6
+	  / \   \
+	 1   4   9
+	  \     /
+	   2   7
+	        \
+		 8
+
+Inserting
+How do you insert an item into a Binary Search Tree?
+
+Show the result of inserting 3 into the BST.
+
+	     5
+	    / \
+	   4   8
+	  /   / \
+	 2   6   9
+	      \
+	       7
+
+Classwork
+You may work with a partner.
+
+Show the result of inserting 7 into the BST.
+
+	     5
+	    / \
+	   3   8
+	      / \
+	     6   9
+
+Show the result of inserting 4 into the BST.
+
+	      7
+	     / \
+	    5   8
+	   / \   \
+	  2   6   9
+	 / \
+	1   3
+
+Removing
+How do you remove an item from a Binary Search Tree?
+
+Show the result of removing 3 from the BST.
+
+	      7
+	     / \
+	    5   8
+	   / \   \
+	  2   6   9
+	 / \
+	1   3
+
+Show the result of removing 9 from the BST.
+
+	     5
+	    / \
+	   3   6
+	  / \   \
+	 1   4   9
+	  \     /
+	   2   7
+	        \
+		 8
+
+
+Show the result of removing 2 from the BST.
+
+	      7
+	     / \
+	    2   8
+	   / \   \
+	  1   5   9
+	     / \
+	    3   6
+	     \
+	      4
+
+Classwork
+You may work with a partner.
+
+Show the result of removing 5 from the BST.
+
+	      6
+	     / \
+	    5   8
+	   /   / \
+	  2   7   9
+	 / \
+	1   4
+	   /
+	  3
+
+
+Show the result of removing 3 from the BST.
+
+	      3
+	     / \
+	    2   8
+	   /   / \
+	  1   5   9
+	     / \
+	    4   6
+	    	 \
+	          7
+
+Classwork
+You may work with a partner.
+Show the result of inserting  4 9 5 1 3 2 7 8 6  into a BST.
+Show the result of removing  4 5 6  from the BST.
+
+BST Implementation
+
+Write the code for insert.
+
+Classwork
+You may work with a partner.
+Write the code for find.
+
+Write the code for remove.
+
+
+BST Time Analysis
+What's the time for find, insert, and remove on a BST?
+
+What characteristic of the tree affects the time?
+
+What's the height of a BST with N nodes?
+
+What's the best-case height of a BST with N nodes?
+	the tree is balanced
+	the height is O(log N)
+	find, insert, and remove are O(log N)
+
+What's the worst-case height of a BST with N nodes?
+	the tree is like a linked list
+	the height is O(N)
+	find, insert, and remove are O(N)
+
+What's the average-case height of a BST with N nodes?
+	the average case is 38% worse than the best case
+	the height is still O(log N)
+	find, insert, and remove are O(log N)
+
+What happens if you insert a sorted sequence of items into a BST?
+

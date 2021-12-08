@@ -1,0 +1,25 @@
+
+Language review is complete
+
+Now begin study of data structures
+
+What's a Data Structure?
+
+	an object that stores a collection of other objects
+	data structures are sometimes called "containers"
+
+What are the common data types?
+	List
+	Set
+	Map
+	Stack
+	Queue
+	Priority Queue
+
+What's our approach to studying data structures?
+
+	1. learn the operations and behavior of each type
+	2. learn how they can be used to solve problems
+	3. first use the data types in the standard library
+	4. later learn how each type is implemented
+

@@ -1,0 +1,267 @@
+
+Give the worst-case BigOh bounds on the running time 
+for the given operations on the given data types.
+Assume that all data structures have been implemented well.
+
+    get on an Array List
+    get on a Linked List
+    push on a Stack
+    pop on a Stack
+    add on a Queue
+    remove on a Queue
+
+—————————
+
+Consider a stack that is implemented using an array with space for four items.
+The four positions in the array have indexes 0, 1, 2, and 3.
+The variable top contains the index of the item on the top of the stack.
+(Note that for some implementations of an array stack, top contains the 
+index of the next available space beyond the item on the top of the stack.
+This is not true of this implementation.)
+The stack is initially empty. The variable top is initialized to -1.
+Give the content of each position in the array and the index stored
+in top after each of the following stack operations are executed.
+
+
+push(4)
+push(2)
+pop()
+push(8)
+push(3)
+pop()
+push(1)
+push(7)
+pop()
+
+
+0 1 2 3	top
+
+—————
+
+
+Consider the List class below which implements a doubly-linked list.
+The variable head points to the first node on the list.
+The variable tail points to the last node on the list.
+The list does not use header nodes and the list is not circular.
+The next pointer in the last node is null and 
+the prev pointer in the first node is null.
+When the list is empty both head and tail are null.
+
+class List {
+    struct Node {
+        ItemType item;
+	Node* next;
+        Node* prev;
+    }
+    Node* head;
+    Node* tail;
+
+    void insertList (List* list, Node* where) {
+
+    }
+}
+
+The insertList method inserts a list into the middle of another list.
+The list 'list' is inserted following the node 'where'.
+The resulting list uses the existing nodes from the original lists.
+InsertList connects the node 'where' to the first node from 'list'.
+InsertList connects the last node from 'list' with the node following 'where'.
+Implement the insertList method.
+
+The following is true at the beginning of the method:
+
+a. list and where are non-null
+b. The two lists have no nodes in common.
+
+Your code must work correctly in general and in particular
+for all of the following special cases:
+
+a. list is an empty list
+b. where is the first node of the target list
+c. where is the last node of the target list
+
+—————
+
+List the labels of the nodes of the binary tree in preorder,
+postorder, and inorder.
+
+
+               A
+              / \
+             B   C
+            / \   \
+           D   E   F
+              /   / \
+             G   H   I
+              \
+               J
+              /
+             K
+
+
+preorder   
+postorder  
+inorder	   
+
+—————
+
+Consider the Node class below which implements a node in a binary tree.
+
+    struct Node {
+        ItemType item;
+	Node* left;
+        Node* right;
+    }
+
+Write a recursive method to count number of non-leaf nodes in a binary tree.
+
+—————
+
+Give the average-case and worst-case BigOh bounds for the 
+running time for the given operations on the given data types.
+Assume that all data structures have been implemented well.
+
+     find on a BST
+     find on an AVL BST
+     find on a hash table
+     insert on a heap
+     remove on a heap
+     heapify on an array
+
+—————
+
+Insert a node with label 3 into the binary search tree.
+Do not do any rebalancing of the tree.
+Draw the tree that results.
+
+
+               5
+              / \
+             1   6
+            / \   \
+           0   4   8
+              /   / \
+             2   7   9
+
+
+————
+
+Delete the node with label 1 from the binary search tree.
+Do not do any rebalancing of the tree.
+Draw the tree that results.
+
+
+               5
+              / \
+             1   6
+            / \   \
+           0   4   8
+              /   / \
+             2   7   9
+              \
+               3
+
+——————
+
+Insert a node with label 3 into the AVL binary search tree.
+Perform any needed rotations to maintain the AVL property.
+Draw the tree that results.
+
+
+                 7
+                / \
+               4   8
+              / \   \
+             1   5   9
+            / \   \
+           0   2   6
+
+————
+
+Delete the node with label 2 from the AVL binary search tree.
+Perform any needed rotations to maintain the AVL property.
+Draw the tree that results.
+
+
+               4
+              / \
+             2   7
+            /   / \
+           1   5   8
+                \   \
+                 6   9
+
+————
+
+The following array contains a MIN heap.
+Insert a node with label 0 into the MIN heap.
+Give the array representation of the MIN heap that results.
+
+1 2 3 4 7 8 6 9 5
+
+————
+
+The following array contains a MIN heap.
+Execute the remove operation on the MIN heap.
+Give the array representation of the MIN heap that results.
+
+1 2 3 4 7 8 6 9 5
+
+————
+
+Execute the heapify operation on the array to create a MIN heap.
+Give the array representation of the MIN heap that results.
+
+
+9 1 8 2 7 3 6 4 5
+
+————
+
+Suppose the following array is given as input to heap sort.
+
+9 1 8 2 7 3 6 4 5
+
+After completing heapify to make a MAX heap, the array is:
+
+9 7 8 5 1 3 6 4 2
+
+Give the content of the array after each major step of the remainder
+of heap sort.
+(In other words, we've already done the heapify part of heap sort for
+you. Beginning at that point, you need to give the content of the
+array after the completion of each major step of the algorithm. A
+major step is a swap followed by a percolate down.)
+
+————
+
+Insert the following values into the hash table below.
+Use Chaining to resolve collisions.
+Do not grow the table or do any rehashing.
+Use the hash function h(x) = x % hash_table_size.
+
+39  48  25  32
+
+ 0  1  2  3  4  5  6
+
+—————
+
+Insert the following values into the hash table below.
+Use Linear Probing to resolve collisions.
+Do not grow the table or do any rehashing.
+Use the hash function h(x) = x % hash_table_size.
+
+39  48  25  32
+
+ 0  1  2  3  4  5  6
+
+————
+
+Insert the following values into the hash table below.
+Use Quadratic Probing to resolve collisions.
+Do not grow the table or do any rehashing.
+Use the hash function h(x) = x % hash_table_size.
+
+ 24  39  17  46
+
+ 0  1  2  3  4  5  6
+

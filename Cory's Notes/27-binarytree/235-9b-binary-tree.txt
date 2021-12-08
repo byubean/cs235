@@ -1,0 +1,110 @@
+Binary Trees (8.1)
+
+Draw an example of a binary tree on the board.
+
+		 A
+	       /   \
+	      B	    C
+	     / \   /
+	    D   E F
+	       /   \ 
+	      G     H
+	       \
+	        I
+
+
+What's a Binary Tree?
+	a tree where each node has at most two children???
+
+How many different binary trees are there with exactly 2 nodes?
+
+Binary trees are recursive
+	a binary tree is a root node
+	connected to a left subtree and a right subtree
+
+What are some applications of binary trees?
+	binary search trees
+	expression trees
+	priority queues
+
+How can you represent an expression as a binary tree?
+How do you use the tree to evaluate the expression?
+
+	(2 * (5-3)) + -4
+
+	        +
+	       / \
+	      *   -
+	     / \   \
+	    2   -   4
+	       / \
+	      5   3
+
+
+Binary Tree Implementation (8.3)
+What's stored in each binary tree node object?
+
+Show the code for binary tree nodes.
+
+Binary Tree Traversal (8.2)
+
+Classwork
+You may work with a partner.
+
+List the nodes of the tree in preorder.
+Write the code for a preorder traversal.
+
+		 A
+	       /   \
+	      B	    C
+	     / \   /
+	    D   E F
+	       /   \ 
+	      G     H
+	       \
+	        I
+
+Classwork
+You may work with a partner.
+
+List the nodes of the tree in postorder.
+Write the code for a postorder traversal.
+
+		 A
+	       /   \
+	      B	    C
+	     / \   /
+	    D   E F
+	       /   \ 
+	      G     H
+	       \
+	        I
+
+
+What's an inorder traversal?
+
+List the nodes of the tree in inorder.
+Write the code for an inorder traversal.
+
+		 A
+	       /   \
+	      B	    C
+	     / \   /
+	    D   E F
+	       /   \ 
+	      G     H
+	       \
+	        I
+
+Write a recursive method that finds the size of a binary tree.
+
+Classwork
+You may work with a partner.
+Write a recursive method that finds the height of a binary tree.
+
+Binary Tree Iterators
+
+How can you traverse a tree without using recursion?
+Write a preorder Iterator for a binary tree.
+Write a level-order Iterator for a binary tree.
+

@@ -1,0 +1,51 @@
+Linked List Implementation (4.5, 4.7)
+
+Draw a diagram of a Linked List object on the board.
+What instance variables are needed inside a Linked List object?
+What variables are needed inside a Node on the list?
+What does the constructor need to do?
+Show the code for the variables, constructor and size method.
+
+
+How does the append method work?
+Show how append works on the diagram on the board.
+Write the code for the append method.
+
+
+How does the remove method work?
+Show how remove works on the diagram on the board.
+
+
+
+Classwork
+You may work with a partner.
+
+Write the code for the remove method.
+
+How does the find method work?
+Show how find works on the diagram on the board.
+
+
+How does the get/set method work?
+Show how get/set works on the diagram on the board.
+
+
+What's the Big-Oh bound for append/remove/find/get/set?
+
+
+
+Why does the List need a destructor?
+Write the code for the destructor.
+
+Why does the List need a copy constructor?
+Write the code for the Copy Constructor.
+
+Why does the List need an assignment operator?
+Write the code for the Assignment Operator.
+
+
+How do you implement an iterator?
+What instance variables are needed to iterate over a Linked List?
+Write the code for the iterator.
+
+

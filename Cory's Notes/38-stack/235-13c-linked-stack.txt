@@ -1,0 +1,162 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Linked List Stack (5.3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Draw a diagram of a Linked-List Stack object on the board.
+
+What instance variables are needed inside a Linked-List Stack object?
+
+Which end of the list should be the top of the stack?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How does the push method work?
+
+Show how push works on the diagram on the board.
+
+Write the code for the push method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How does the pop method work?
+
+Show how pop works on the diagram on the board.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Classwork
+You may work with a partner.
+
+Write the code for the pop method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What's the Big-Oh bound for push and pop?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Memory Management
+
+
+Why does the Stack need a destructor?
+
+Write the code for the destructor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

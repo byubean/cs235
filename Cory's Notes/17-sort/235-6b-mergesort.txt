@@ -1,0 +1,99 @@
+Merge Sort (10.7)
+
+How does Merge Sort work?
+
+	if the size of the List is at least 2
+	    split the List into the left half and the right half
+	    recursively sort left
+	    recursively sort right
+	    merge left and right into one List
+	end if
+
+What are the contents of the left half and the right half
+after the recursive calls sort each half.
+	8 5 2 7 7 6 3 4
+
+How do you merge the two sorted halves?
+Show the steps of merging the two sorted halves.
+
+
+Show the steps of Merge Sort on the List.
+Give the Lists after each split and merge step.
+	8 5 2 7 7 6 3 4
+
+
+Classwork
+You may work with a partner.
+
+Show the steps of Merge Sort on the List.
+Give the Lists after each split and merge step.
+
+	8 5 4 6 2 3 4 1
+
+
+
+Merge Sort Code
+
+mergeSort ( list ) {
+
+  if ( list.size > 1 ) {
+
+    split( list, left, right );
+
+    mergeSort( left );
+    mergeSort( right );
+
+    merge( left, right, list );
+
+  }
+
+}
+
+split ( list, left, right ) {
+
+  for each item in the left half of list
+     add the item to left
+
+  for each item in the right half of list
+     add the item to right
+
+}
+
+merge( left, right, list ) {
+
+  while both left and right have more items
+    if the left item is less than the right item
+      add the left item to list
+    else
+      add the right item to list
+
+  while left has more items
+    add the left item to list
+
+  while right has more items
+    add the right item to list
+
+}
+
+
+
+What's the running time for split?
+
+What's the running time for merge?
+
+What's the running time for Merge Sort?
+
+Does the running time for Merge Sort depend on
+the kind of input you give it?
+
+DEMO	(merge sort running time on sorted, reverse, random data)
+
+
+Visualizing The Merge Sort Running Time
+
+How can you see the Merge Sort running time visually?
+
+How much merging work does Merge Sort do at each level?
+
+How many levels can Merge Sort recurse before hitting the base case?
+

@@ -1,0 +1,67 @@
+
+Stack Data Type (5.1)
+
+What's a Stack?
+
+	1. a List with restricted access
+	2. only the top item on the stack is accessible
+	3. LIFO (Last In First Out)
+	4. items come out in reverse order
+
+
+What operations are supported by a Stack?
+What's the abstract interface for a Stack?
+
+	push(item);
+	pop();
+	top();
+	empty();
+
+Classwork
+You may work with a partner.
+
+What does the program print?
+
+	Stack S1;
+	S1.push(4);
+	S1.push(2);
+	S1.push(4);
+	S1.push(8);
+	print(S1);
+
+	Stack S2;
+	Stack S3;
+	while (!S1.empty()) {
+	    S2.push(S1.pop());
+	    S3.push(S1.pop());
+	}
+	print(S2);
+	print(S3);
+
+	while (!S2.empty())
+	    S3.push(S2.pop());
+	print(S3);
+
+
+
+What kinds of applications is a Stack good for?
+What kinds of problems can be solved using a Stack?
+
+	nested data
+	data with a reversing nature
+
+
+Stacks in the C++ Library
+
+	#include <stack>
+	std::stack
+
+
+What are some of the operations supported by std::stack?
+
+	void push ( const ItemType& item );
+	void pop ( );  // does not return the popped item
+	ItemType& top ( );
+	bool empty () const;
+	size_t size() const;
+

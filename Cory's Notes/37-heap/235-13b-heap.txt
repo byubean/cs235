@@ -1,0 +1,98 @@
+Heap Sort (10.8)
+
+How can you use a Heap to sort a list of items?
+	1. build a Heap from the list
+	2. remove the items one at a time from the Heap
+	   (the items are removed in sorted order)
+
+Where do you put each item that is removed?
+
+What's the order of the items in the resulting list?
+
+Show the steps of Heap Sort on the list. (use a max-heap)
+
+	8 2 5 4 6 7 3
+	8 6 7 4 2 5 3  (heapify)
+
+
+Classwork: You may work with a partner.
+
+Show the steps of Heap Sort on the list. (use a max-heap)
+
+	7 8 8 4 5 4 3
+	8 8 7 4 5 4 3  (heapify)
+
+Heap Sort Code
+
+	build a heap from the list
+	while the heap is not empty
+	    swap the first item with the last item
+	    decrement the size of the heap
+	    percolate down the first item
+	end while
+
+
+What's the running time for Heap Sort?
+
+How much space is used by Heap Sort?
+
+Build Heap (Heapify)
+
+How do you build a Heap from a list of items?
+
+	insert each item one at a time?
+	(the book uses this approach)
+
+You can build a Heap more efficiently by only
+reordering the items that need to be moved.
+
+Consider the items at the bottom level of the tree (the leaf nodes).
+Do any of these items need to move lower?
+
+What about the items at the next higher level?
+How do you easily reorder these items?
+
+Show the result of Heapify on the list. (use a min-heap)
+
+	8 5 2 7 3 4 6 9 2
+
+	       8
+	      / \
+	     /   \
+	    5     2
+	   / \   / \
+	  7   3 4   6
+	 / \
+	9   2
+
+
+Classwork: Show the result of Heapify on the list. (use a min-heap)
+	7 8 8 4 5 4 3 1 2
+
+	       7
+	      / \
+	     /   \
+	    8     8
+	   / \   / \
+	  4   5 4   3
+	 / \
+	1   2
+
+Code for Heapify
+	for each item in the first half of the heap
+	  (working backwards from the middle to the first item)
+	    percolate down the item
+	end for
+	(if the list is odd length, the middle item is skipped)
+
+What's the running time for Heapify?
+	O(n log n)?
+
+How do you show that Heapify is O(n)?
+
+	the sum of node-heights is a bound on the percolate steps
+	the sum of node-heights is n-1 - h
+	    for each node, mark one left edge, then right edges
+	    each edge is marked once, except the right side
+	    a tree has n-1 edges, h edges on the right side
+

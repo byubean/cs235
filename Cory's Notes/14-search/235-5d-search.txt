@@ -1,0 +1,71 @@
+
+Searching
+
+What's Searching?
+
+	int search(list, item);
+
+	return the index of item in list
+	return -1 if item is not found
+
+
+
+Linear Search
+
+How does a Linear or Sequential Search work?
+
+    for each i from 0 to size-1
+      if item equals list[i]
+	return i
+    return not found
+
+What's the Big-Oh bound on a Linear Search?
+
+DEMO	(running time of linear search)
+
+
+Binary Search
+
+How does a Binary Search work?
+
+    low = index of first item in list
+    high = index of last item in list
+    while low is less than or equal to high
+      mid = index halfway between low and high
+      if item is less than list[mid]
+	high = mid - 1
+      else if item is greater than list[mid]
+	low = mid + 1
+      else
+	return mid
+    end while
+    return not found
+
+
+What must be true about the List for a Binary Search to work?
+
+
+Show the steps of a binary search for 36 in the List.
+What are the values for low, high, and mid at each step?
+What part of the List is the algorithm still searching at each step?
+
+	16 18 24 32 36 48 55 64 72 75 77 83 90 96 99
+	 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14
+
+
+Classwork
+You may work with a partner.
+
+Show the steps of a binary search for 80 in the List.
+What are the values for low, high, and mid at each step?
+What part of the List is the algorithm still searching at each step?
+
+	16 18 24 32 36 48 55 64 72 75 77 83 90 96 99
+	 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14
+
+
+What's the Big-Oh bound on a Binary Search?
+
+DEMO	(running time of binary search)
+
+I

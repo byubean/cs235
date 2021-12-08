@@ -1,0 +1,320 @@
+AVL Trees (11.1, 11.2)
+
+What's an AVL tree?
+	a Binary Search Tree
+	with insert and remove algorithms that keep the tree balanced
+
+	(named after Adelson-Velskii and Landis)
+
+How well does an AVL tree stay balanced?
+	the worst case height is about 1.5 times the best case
+	find, insert, and remove are O(log n) in the worst case
+
+The AVL Balance Property
+
+What's the AVL Balance Property?
+	for every node in the tree
+	the height of the left and right subtrees differ by at most 1
+
+Draw an example AVL tree on the board.
+
+	     5
+	    / \
+	   4   8
+	  /   / \
+	 2   6   9
+	      \
+	       7
+
+Classwork
+You may work with a partner.
+
+Is the tree an AVL Tree?
+If not, identify where the balance property is violated.
+	     5
+	    / \
+	   3   6
+	  / \   \
+	 1   4   9
+	  \     /
+	   2   7
+	        \
+		 8
+
+	     5
+	    / \
+	   3   8
+	  / \   \
+	 1   4   9
+	  \   \
+	   2   6
+
+
+Finding
+
+How do you find an item in an AVL Tree?
+	same as in a regular BST
+
+How do you find the smallest or largest item in an AVL Tree?
+	same as in a regular BST
+
+
+Inserting
+How do you insert an item into an AVL Tree?
+	first insert as in a standard BST
+	then look for nodes that are out of balance
+	if needed, restore balance using rotations
+
+Show the result of inserting 2 into the AVL Tree.
+
+	     5
+	    / \
+	   3   8
+	      / \
+	     6   9
+
+Show the result of inserting 9 into the AVL Tree.
+
+	     4
+	      \
+	       7
+
+Show the result of inserting 5 into the AVL Tree.
+
+	     3
+	    / \
+	   2   8
+	  /   / \
+	 1   7   9
+	    /
+	   6
+
+Show the result of inserting 8 into the AVL Tree.
+
+	      3
+	     / \
+	    2   5
+	   /   / \
+	  1   4   7
+	         / \
+	        6   9
+
+Classwork
+You may work with a partner.
+Show the result of inserting 9 into the AVL Tree.
+
+	      6
+	     / \
+	    2   7
+	   / \   \
+	  1   4   8
+	     / \
+	    3   5
+
+Show the result of inserting 2 into the AVL Tree.
+
+	      7
+	     / \
+	    5   8
+	   / \   \
+	  3   6   9
+	 / \
+	1   4
+
+Show the result of inserting 9 into the AVL Tree.
+
+	      2
+	     / \
+	    1   5
+	   /   / \
+	  0   4   7
+	     /   / \
+	    3   6   8
+
+Rotations
+
+What are the steps of a Single Right Rotation?
+	let n be the node that is out of balance
+	let k be the left child of n
+
+	make the parent of n point to k instead of n
+	make n's left child pointer point to k's right child
+	make k's right child pointer point to n
+
+What are the steps of a Single Left Rotation?
+
+	let n be the node that is out of balance
+	let k be the right child of n
+
+	make the parent of n point to k instead of n
+	make n's right child pointer point to k's left child
+	make k's left child pointer point to n
+
+How do you know if rotations are needed?
+	look for nodes that violate the AVL property
+
+Do you have to check all the nodes in the tree?
+Where will you find the unbalanced nodes?
+	only look on the path from the root to the newly added node
+
+An insertion can cause more than one node to be unbalanced.
+Do you need to do a rotation for each of the unbalanced nodes?
+	no, only do one rotate at the deepest node
+
+Double Rotations
+
+What happens when you insert 6 into the tree and try to rebalance?
+
+	     4
+	      \
+	       7
+
+How do you correct this type of imbalance?
+
+Show the result of inserting 6 into the AVL Tree.
+
+	     4
+	      \
+	       7
+
+Show the result of inserting 7 into the AVL Tree.
+
+	     5
+	    / \
+	   3   8
+	      / \
+	     6   9
+
+
+Show the result of inserting 3 into the AVL Tree.
+
+	      7
+	     / \
+	    2   8
+	   / \   \
+	  1   5   9
+	 /   / \
+	0   4   6
+
+Classwork
+You may work with a partner.
+Show the result of inserting 6 into the AVL Tree.
+
+	     3
+	    / \
+	   2   8
+	  /   / \
+	 1   7   9
+	    /
+	   5
+
+Show the result of inserting 4 into the AVL Tree.
+
+	      7
+	     / \
+	    5   8
+	   / \   \
+	  2   6   9
+	 / \
+	1   3
+
+Show the result of inserting 3 into the AVL Tree.
+
+	      2
+	     / \
+	    1   7
+	   /   / \
+	  0   5   8
+	     / \   \
+	    4   6   9
+
+What are the steps of a Double Right Rotation?
+	let n be the node that is out of balance
+
+	do a single left rotation on n's left child
+	do a single right rotation on n
+
+What are the steps of a Double Left Rotation?
+	let n be the node that is out of balance
+
+	do a single right rotation on n's right child
+	do a single left rotation on n
+
+How do you recognize that a double rotation is needed?
+	the right child is higher and the right-left grandchild is higher
+	the left child is higher and the left-right grandchild is higher
+
+	single rotate fails
+
+Removing
+
+How do you remove an item from an AVL Tree?
+	first remove as in a standard BST
+	then look for nodes that are out of balance
+	if needed, restore balance using rotations
+
+How can remove be different from insert when rebalancing?
+	you can have equal height grandchildren
+	more than one node may need rebalancing
+
+Show the result of removing 3 from the AVL Tree.
+
+	     5
+	    / \
+	   3   8
+	      / \
+	     6   9
+
+Show the result of removing 2 from the AVL Tree.
+
+	     5
+	    / \
+	   4   8
+	  /   / \
+	 2   6   9
+	      \
+	       7
+
+Classwork
+You may work with a partner.
+Show the result of removing 2 from the AVL Tree.
+
+	      3
+	     / \
+	    2   5
+	   /   / \
+	  1   4   7
+	         / \
+	        6   9
+
+Show the result of removing 8 from the AVL Tree.
+
+	      7
+	     / \
+	    2   8
+	   / \   \
+	  1   5   9
+	 /   / \
+	0   4   6
+
+Show the result of removing 9 from the AVL Tree.
+
+	      7
+	     / \
+	    3   8
+	   / \   \
+	  2   5   9
+	     / \
+	    4   6
+
+Show the insertion of values   20 40 80 30 10 15 12 35 25 32 24
+into an AVL tree on the board.
+
+Show the removal of 30, 20, 24 from the AVL tree on the board.
+
+
+Classwork
+You may work with a partner.
+Show the result of inserting  9 1 8 2 7 3 6 4 5  into an AVL tree.
+Show the result of removing  7 2 1  from the tree.
+

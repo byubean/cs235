@@ -1,0 +1,90 @@
+
+Classes (1.3)
+
+What's a class?
+What's an object?
+What's contained inside an object?
+
+DEMO	(show the Book class)
+
+What's a constructor?
+Why use initializers instead of assignment statements?
+
+What's a getter?
+Why are getters declared const?
+
+What's a setter?
+Where's the implementation for the setters?
+What's a common file structure for C++ classes?
+What's the scope resolution operation?
+What's the 'this' pointer?
+
+
+Testing
+
+How do you test a class?
+
+DEMO	(test the Book class with Test.cpp)
+
+What happens if Book is included twice?
+
+DEMO	(include Book twice in Test.cpp)
+
+
+How do you fix this problem?
+
+DEMO	(add '#pragma once' to Book.h)
+
+
+
+Private Data, Public Functions
+
+DEMO	(change a title without using a setter)
+
+
+How should the data inside an object be protected?
+
+	instance variables should be declared private
+
+
+How can you access the data in an object if the data is private?
+
+
+
+Lists of Books
+
+
+How do you make a list of objects?
+
+DEMO	(test the Book list with Test.cpp)
+
+
+Sorting
+
+
+How do you sort a list of objects?
+
+DEMO	(add sort method to Test.cpp)
+
+
+What operation is needed in the Book class?
+
+DEMO	(add operator< to Book.h)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
