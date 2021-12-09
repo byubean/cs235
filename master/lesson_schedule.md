@@ -1,30 +1,5 @@
 28 days, 75 minutes per class
 
-## Topics (Barker)
-- 1-3 Intro and C++ review (x3)
-- 4 List
-- 5 Set
-- 6 Map
-- 7 Stack
-- 8 Queue
-- 9 Recursion
-- 10-11 Big O (x2)
-- 12 Search
-- 13-15 Sort (x3)
-- 16 Midterm Review
-- 17 Linked List
-- 18 Array List
-- 19 Tree
-- 20 Binary Tree
-- 21 BST
-- 22 AVL
-- 23-24 Hash (x2)
-- 25 Heap
-- 26 Stack (implement linked vs array)
-- 27 Queue
-- 28 Final Review
-
-
 ## Topics (Crandall)
 - 1-2 Intro and Programming Env: syllabus, programming env, linux
 - 3-5 C++ Review
@@ -49,7 +24,10 @@
 - 28 Final Review
 
 ## Topics (Bean)
-
+1. Intro: syllabus, masks, cheating, abstractions
+2. Programming env (docker), hello world, file IO?
+3. Computers, Memory, pass-by-reference
+4. Classes, Collections
 
 ## C++ Additional Review topics
 - namespaces
