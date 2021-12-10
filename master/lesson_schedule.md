@@ -25,9 +25,9 @@
 
 ## Topics (Bean)
 1. Intro: syllabus, masks, cheating, abstractions
-2. Programming env (docker), hello world, file IO?
+2. Programming env (docker), hello world, `make`
 3. Computers, Memory, pass-by-reference
-4. Classes, Collections
+4. Classes, (!) Inheritance, Collections
 
 ## C++ Additional Review topics
 - namespaces
@@ -37,4 +37,5 @@
 - Function overloading
 - Operator overloading
 - (!) Inheritance (Lab 1)
-- (!) `make`
+
+
