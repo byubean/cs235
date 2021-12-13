@@ -1,2 +1,6 @@
 .DS_Store
-.ipynb_checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+master/Unit1-Cpp-Review/.ipynb_checkpoints/
+master/Unit1-Cpp-Review/.ipynb_checkpoints/
+master/Unit0-Intro/.ipynb_checkpoints/

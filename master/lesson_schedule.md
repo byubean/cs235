@@ -2,7 +2,7 @@
 
 ## Topics (Crandall)
 - 1-2 Intro and Programming Env: syllabus, programming env, linux
-- 3-5 C++ Review
+- 3-5 C++ Review    
 - 6 Lists and iterators 
 - 6 LAB 1: C++ Review
 - 7 Stacks, Queues, and Priority Queues
@@ -25,9 +25,23 @@
 
 ## Topics (Bean)
 1. Intro: syllabus, masks, cheating, abstractions
+### Unit 1
 2. Programming env (docker), hello world, `make`
-3. Computers, Memory, pass-by-reference
-4. Classes, (!) Inheritance, Collections
+
+3. Computers, Memory, pass-by-reference, `valgrind`
+4. Templates, FileIO, Parsing, Using `vector<string>`
+
+5. Lab 1 Assigned; Classes, Polymorphism, Collections
+### Unit 2
+6. Lists and iterators, (!) Revamp quiz?
+
+7. Lab 1 graded; Stacks, Queues, and Priority Queues
+8. Sets and Maps
+
+9. Lab 2 assigned; Catch up?
+### Unit 3
+10. Recursion
+
 
 ## C++ Additional Review topics
 - namespaces
@@ -36,6 +50,5 @@
 - `nullptr`
 - Function overloading
 - Operator overloading
-- (!) Inheritance (Lab 1)
-
+- Templates
 
