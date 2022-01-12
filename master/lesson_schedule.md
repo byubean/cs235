@@ -27,20 +27,111 @@
 1. Intro: syllabus, masks, cheating, abstractions
 ### Unit 1
 2. Programming env (docker), hello world, `make`
+  - Announcements
+    - there will be graded quizes in canvas - be sure to do them
+    - TA info in canvas announcement and Instructor/TA info page
+    - Text books...
+    - I will include class notes in canvas
 
-3. Computers, Memory, pass-by-reference, `valgrind`
-4. Templates, FileIO, Parsing, Using `vector<string>`
 
-5. Lab 1 Assigned; Classes, Polymorphism, Collections
+3. (Jan 11) Computers, Memory, 
+4. (Jan 13) 
+  - FileIO, Parsing, Using `vector<string>`
+  - Classes, basic inheritance
+  - Lab 1 assigned
+
+5. (Jan 18) 
+  - Functions, pass-by-reference, Templates, 
+  - Classes, Polymorphism, Collections
 ### Unit 2
-6. Lists and iterators, (!) Revamp quiz?
+6. (Jan 20) 
+  - Lab 1 graded
+  - Stacks, Queues, and Priority Queues
+  - Lab 2 (rolling window/queue) assigned
+  
+7. Jan (25) 
+  - Vectors, Lists, Deques, Iterators
+8. Jan (27) 
+  - Lab 2 due
+  - Sets and Maps
+  - Lab 3 (1 Nephi/map) assigned
 
-7. Lab 1 graded; Stacks, Queues, and Priority Queues
-8. Sets and Maps
-
-9. Lab 2 assigned; Catch up?
+9. (Feb 1) 
+  - Recursion
+    - Boggle
 ### Unit 3
-10. Recursion
+10. (Feb 3) 
+  - Big O, binary search
+  - Lab 3 (maps) due
+  - Lab 4 (maze/recursion) assigned
+
+11. (Feb 8)
+  - Sorting
+    - Insertion
+    - Selection
+    - Bubble!
+12. (Feb 10)
+  - Lab 4 (maze) due
+  - Sorting
+    - Merge
+    - Quick
+  - Lab 5 (sorting) assigned
+
+13. (Feb 15)
+  - Linked-list implemented, `valgrind`
+14. (Feb 17)
+  - Lab 5 (sorting) due
+  - Midterm review
+  - Lab 6 (linked list) assigned)
+  
+15. (Feb 22) Monday Instruction
+  - Take midterm!
+16. (Feb 24)
+  - Lab 6 (linked list) due
+  - Take midterm!
+
+17. (March 1)
+  - Trees and tree traversal
+18. (March 3)
+  - Binary search Tree
+  - Lab 7 (BST) assigned 
+
+19. (March 8)
+  - AVL
+20. (March 10)
+  - AVL
+  - Lab 7 (BST) due
+  - Lab 8 (AVL) assigned 
+
+21. (March 15)
+  - AVL
+22. (March 17)
+  - AVL
+  - Lab 8 (AVL) due
+
+23. (March 22) 
+  - Hash tables (conflict resolution)
+24. (March 24)
+  - Hash Maps
+  - Lab 9 (Hash maps) assigned
+
+25. (March 29)
+  - Binary heaps
+26. (March 31)
+  - Heap sort
+  - Lab 9 (hash maps) due
+  - Lab 10 (heap) assigned
+
+27. (April 5)
+  - Interview questions
+28. (April 7)
+  - ???
+  - Lab 10 (heap) due
+
+29. (April 12)
+  - Final Exam Review
+
+`valgrind` - do this when we have the opportunity for memory leaks
 
 
 ## C++ Additional Review topics

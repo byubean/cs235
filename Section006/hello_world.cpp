@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+
+int main(int argc, char* argv[]) {
+    std::string name;
+    if (argc < 2) {
+        name = "world";
+    } else {
+        name = argv[1];
+    }
+    std::cout << "argc is: " << argc << std::endl;
+    std::cout << "Hello " << name << "!" << std::endl;
+}
