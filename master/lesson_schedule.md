@@ -36,21 +36,25 @@
 
 3. (Jan 11) Computers, Memory, 
 4. (Jan 13) 
-  - FileIO, Parsing, Using `vector<string>`
+  - Functions, pass-by-reference, FileIO, Parsing, Using `vector<string>`, templates?
   - Classes, basic inheritance
   - Lab 1 assigned
 
 5. (Jan 18) 
-  - Functions, pass-by-reference, Templates, 
+  - Templates ??
   - Classes, Polymorphism, Collections
 ### Unit 2
 6. (Jan 20) 
   - Lab 1 graded
   - Stacks, Queues, and Priority Queues
+    - Palindromes Quiz? (I'd prefer a nested-matching problem...)
+    - ! Stacks quiz 
   - Lab 2 (rolling window/queue) assigned
   
 7. Jan (25) 
   - Vectors, Lists, Deques, Iterators
+  - Lists quiz
+  - Queues quiz?
 8. Jan (27) 
   - Lab 2 due
   - Sets and Maps
