@@ -1,3 +1,5 @@
 Bean 7
 Smith 54
 Schwartz 0
+Spencer 3
+Tyler 3

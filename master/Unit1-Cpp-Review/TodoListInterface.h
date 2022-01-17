@@ -1,11 +1,5 @@
-//
-// Created by Gordon Bean on 1/12/22.
-//
 
-#ifndef LAB1_TODOLISTINTERFACE_H
-#define LAB1_TODOLISTINTERFACE_H
-
-
+#pragma once
 #include <iostream>
 #include <string>
 
@@ -17,7 +11,7 @@ public:
     virtual ~TodoListInterface() {}
 
     /*
-    *   Adds an item to the todo list with the data specified
+    *   Adds an item to the todo list with the data specified 
     *   by the string "_duedate" and the task specified by "_task"
     */
     virtual void add(string _duedate, string _task) = 0;
@@ -33,11 +27,10 @@ public:
     *   Prints out the full todo list to the console
     */
     virtual void printTodoList() = 0;
-
+    
     /*
     *   Prints out all items of a todo list with a particular due date (specified by _duedate)
     */
     virtual void printDaysTasks(string _date) = 0;
 };
 
-#endif //LAB1_TODOLISTINTERFACE_H
