@@ -1,5 +1,6 @@
-#pragma once
 
+#ifndef HOUSE
+#define HOUSE
 #include <string>
 using namespace std;
 
@@ -15,3 +16,5 @@ public:
     string getZipCode() const;
     string str() const;
 };
+
+#endif

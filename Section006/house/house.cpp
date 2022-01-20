@@ -2,13 +2,14 @@
 #include <sstream>
 
 #include "house.h"
+#include "house.h"
 
 using namespace std;
 
 House::House(int sqFootage, string address, string zipCode)
-        : sqFootage(sqFootage), address(address), zipCode(zipCode)
+        : address(address), zipCode(zipCode), sqFootage(sqFootage)
 {
-    // Nothing needed here
+    // Nothing else needed here
 }
 
 int House::getSqFootage() const {
