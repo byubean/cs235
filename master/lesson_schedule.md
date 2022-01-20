@@ -47,16 +47,14 @@
 6. (Jan 20) 
   - Lab 1 graded
   - Stacks, Queues, and Priority Queues
-    - Palindromes Quiz? (I'd prefer a nested-matching problem...)
     - ! Stacks quiz 
-  - Lab 2 (rolling window/queue) assigned
+  - Lab 2 Parentheses assigned
   
 7. Jan (25) 
   - Vectors, Lists, Deques, Iterators
   - Lists quiz
-  - Queues quiz?
 8. Jan (27) 
-  - Lab 2 due
+  - Lab 2 due - in class code review - 5+5 minutes
   - Sets and Maps
   - Lab 3 (1 Nephi/map) assigned
 
