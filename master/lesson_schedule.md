@@ -53,20 +53,23 @@
 7. Jan (25) 
   - Vectors, Lists, Deques, Iterators
   - Lists quiz
+### Unit 3
 8. Jan (27) 
   - Lab 2 due - in class code review - 5+5 minutes
   - Sets and Maps
   - Lab 3 (1 Nephi/map) assigned
 
+### Unit 4
 9. (Feb 1) 
   - Recursion
     - Boggle
-### Unit 3
 10. (Feb 3) 
   - Big O, binary search
   - Lab 3 (maps) due
+    - ?? Pass off in class?
   - Lab 4 (maze/recursion) assigned
 
+## Unit 5
 11. (Feb 8)
   - Sorting
     - Insertion
