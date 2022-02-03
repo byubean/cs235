@@ -22,6 +22,8 @@ vector<string> get_perms(string letters) {
             }
         }
     }
+    cout << "Letters are: " << letters << endl;
+    print(perms);
     return perms;
 }
 
