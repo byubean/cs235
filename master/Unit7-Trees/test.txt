@@ -1,0 +1,10 @@
+b > a
+a > aa
+a < 8
+b < c
+c < d
+c > bb
+bb > bba
+bb < bbd
+bba < bbb
+bbd > bbe

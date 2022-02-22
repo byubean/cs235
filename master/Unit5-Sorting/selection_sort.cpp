@@ -8,6 +8,10 @@ template<class T>
 void selection_sort(vector<T>& stuff) {
     for (int i = 0; i < stuff.size()-1; i++) { // Move the partition from 0 to n-2
         cout << endl << "i is " << i << endl;
+        for (T thing : stuff) {
+            cout << thing << " ";
+        }
+        cout << endl;
 
         // Find the min of the unsorted partition
         int min = i;
@@ -23,7 +27,7 @@ void selection_sort(vector<T>& stuff) {
         stuff[i] = stuff[min];
         stuff[min] = tmp;
 
-        for (auto thing : stuff) {
+        for (T thing : stuff) {
             cout << thing << " ";
         }
         cout << endl;

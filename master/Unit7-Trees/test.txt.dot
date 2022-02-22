@@ -1,0 +1,23 @@
+digraph {
+  nb [label="b" pos="4.0,4.0!"]
+  nc [label="c" pos="8.0,3.0!"]
+  nd [label="d" pos="10.0,2.0!"]
+  nbb [label="bb" pos="6.0,2.0!"]
+  nbbd [label="bbd" pos="7.0,1.0!"]
+  nbbe [label="bbe" pos="6.5,0.0!"]
+  nbba [label="bba" pos="5.0,1.0!"]
+  nbbb [label="bbb" pos="5.5,0.0!"]
+  na [label="a" pos="0.0,3.0!"]
+  n8 [label="8" pos="2.0,2.0!"]
+  naa [label="aa" pos="-2.0,2.0!"]
+  nb -> nc
+  nc -> nd
+  nc -> nbb
+  nbb -> nbbd
+  nbbd -> nbbe
+  nbb -> nbba
+  nbba -> nbbb
+  nb -> na
+  na -> n8
+  na -> naa
+}

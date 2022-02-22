@@ -84,20 +84,21 @@
 
 13. (Feb 15)
   - Linked-list implemented, `valgrind`
+  - Lab 6 (linked list) assigned)
 14. (Feb 17)
   - Lab 5 (sorting) due
   - Midterm review
-  - Lab 6 (linked list) assigned)
+  - Midterm assigned
   
 15. (Feb 22) Monday Instruction
   - Take midterm!
 16. (Feb 24)
-  - Lab 6 (linked list) due
   - Take midterm!
 
 17. (March 1)
   - Trees and tree traversal
 18. (March 3)
+  - Lab 6 (linked list) due ?
   - Binary search Tree
   - Lab 7 (BST) assigned 
 
@@ -112,12 +113,12 @@
   - AVL
 22. (March 17)
   - AVL
-  - Lab 8 (AVL) due
 
 23. (March 22) 
   - Hash tables (conflict resolution)
 24. (March 24)
   - Hash Maps
+  - Lab 8 (AVL) due
   - Lab 9 (Hash maps) assigned
 
 25. (March 29)
@@ -136,8 +137,15 @@
 29. (April 12)
   - Final Exam Review
 
-`valgrind` - do this when we have the opportunity for memory leaks
-
+- I would like to have a codex lab
+  - No code provided
+    - Guidance: create a class that takes a file in constructor and loads codex
+      - Has two methods: encode and decode
+  - Must create their own main:
+    - first arg is codex file
+    - second arg is "encode" or "decode"
+    - encode additional arguments or stdin if no additional args provided
+    - print encoding to stdout
 
 ## C++ Additional Review topics
 - namespaces
@@ -148,3 +156,12 @@
 - Operator overloading
 - Templates
 
+
+
+
+Weeks
+- 
+- grids
+- maps
+- maps
+- x4
