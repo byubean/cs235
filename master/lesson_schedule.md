@@ -96,43 +96,46 @@
   - Take midterm!
 
 17. (March 1)
-  - Trees and tree traversal
+  - Trees, tree traversal, and intro to BST
 18. (March 3)
-  - Lab 6 (linked list) due ?
   - Binary search Tree
+  - Lab 6 (linked list) due
   - Lab 7 (BST) assigned 
 
 19. (March 8)
   - AVL
 20. (March 10)
-  - AVL
+  - Interval Trees
   - Lab 7 (BST) due
-  - Lab 8 (AVL) assigned 
+  - Lab 8 (Interval Tree) assigned 
 
 21. (March 15)
-  - AVL
-22. (March 17)
-  - AVL
-
-23. (March 22) 
   - Hash tables (conflict resolution)
-24. (March 24)
+22. (March 17)
   - Hash Maps
-  - Lab 8 (AVL) due
+  - Lab 8 (Interval Tree) due
   - Lab 9 (Hash maps) assigned
 
-25. (March 29)
+23. (March 22) 
   - Binary heaps
-26. (March 31)
+24. (March 24)
   - Heap sort
-  - Lab 9 (hash maps) due
+  - Lab 9 (Hash maps) due
   - Lab 10 (heap) assigned
+
+25. (March 29)
+  - Json?
+  - Composite structures? (Linked map? Suffix tree?)
+26. (March 31)
+  - 
+  - Lab 10 (heap) due
+  - Lab 11 ??? assigned
 
 27. (April 5)
   - Interview questions
 28. (April 7)
   - ???
-  - Lab 10 (heap) due
+  - Lab 11 (???) due
 
 29. (April 12)
   - Final Exam Review
