@@ -1,0 +1,15 @@
+digraph {
+  ni34 [label="i34" pos="2.0,2.0!" label=<[3, 4)<br/><font point-size="10" color="blue">[0,9)</font>>]
+  ni35 [label="i35" pos="4.0,1.0!" label=<[3, 5)<br/><font point-size="10" color="blue">[3,9)</font>>]
+  ni49 [label="i49" pos="5.0,0.0!" label=<[4, 9)<br/><font point-size="10" color="blue">[4,9)</font>>]
+  ni39 [label="i39" pos="3.0,0.0!" label=<[3, 9)<br/><font point-size="10" color="blue">[3,9)</font>>]
+  ni12 [label="i12" pos="0.0,1.0!" label=<[1, 2)<br/><font point-size="10" color="blue">[0,9)</font>>]
+  ni29 [label="i29" pos="1.0,0.0!" label=<[2, 9)<br/><font point-size="10" color="blue">[2,9)</font>>]
+  ni09 [label="i09" pos="-1.0,0.0!" label=<[0, 9)<br/><font point-size="10" color="blue">[0,9)</font>>]
+  ni34 -> ni35 
+  ni35 -> ni49 
+  ni35 -> ni39 
+  ni34 -> ni12 
+  ni12 -> ni29 
+  ni12 -> ni09 
+}

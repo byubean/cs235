@@ -1,0 +1,25 @@
+digraph {
+    node [width=1 fixedsize=true]
+    edge [arrowhead="none"]
+    
+    i49s [label="4" color="white" pos="80,20"]
+    i49e [label="9" color="white" pos="180,20"]
+    i49s -> i49e
+    
+    i03s [label="0" color="white" pos="0,40"]
+    i03e [label="3" color="white" pos="60,40"]
+    i03s -> i03e
+    
+    i27s [label="2" color="white" pos="40,60"]
+    i27e [label="7" color="white" pos="140,60"]
+    i27s -> i27e
+    
+    i56s [label="5" color="white" pos="100,80"]
+    i56e [label="6" color="white" pos="120,80"]
+    i56s -> i56e
+    
+    i68s [label="6" color="white" pos="120,100"]
+    i68e [label="8" color="white" pos="160,100"]
+    i68s -> i68e
+    
+}
