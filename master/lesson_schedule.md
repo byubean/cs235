@@ -114,31 +114,28 @@
 22. (March 17)
   - Hash Maps
   - Lab 8 (Interval Tree) due
-  - Lab 9 (Hash maps) assigned
+  - Lab 9 (Free coding) assigned
 
 23. (March 22) 
   - Binary heaps
 24. (March 24)
   - Heap sort
-  - Lab 9 (Hash maps) due
-  - Lab 10 (heap) assigned
+  - Lab 9 (Free coding) due
 
 25. (March 29)
-  - Json?
-  - Composite structures? (Linked map? Suffix tree?)
+  - Python
+  - Lab 10 (Python) assigned
 26. (March 31)
-  - 
-  - Lab 10 (heap) due
-  - Lab 11 ??? assigned
+  - Python
 
 27. (April 5)
-  - Interview questions
+  - Python
 28. (April 7)
-  - ???
-  - Lab 11 (???) due
+  - Interview questions
 
 29. (April 12)
   - Final Exam Review
+  - Lab 10 (Python) due
 
 - I would like to have a codex lab
   - No code provided

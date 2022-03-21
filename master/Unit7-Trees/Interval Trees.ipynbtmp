@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 4,
+   "execution_count": 1,
    "id": "01db02d6",
    "metadata": {
     "slideshow": {
@@ -15,7 +15,30 @@
      "output_type": "stream",
      "text": [
       "[NbConvertApp] Converting notebook Interval Trees.ipynb to html_embed\n",
-      "[NbConvertApp] Writing 969079 bytes to Interval Trees.html\n"
+      "Traceback (most recent call last):\n",
+      "  File \"/opt/conda/bin/jupyter-nbconvert\", line 11, in <module>\n",
+      "    sys.exit(main())\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/jupyter_core/application.py\", line 264, in launch_instance\n",
+      "    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/traitlets/config/application.py\", line 846, in launch_instance\n",
+      "    app.start()\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/nbconvert/nbconvertapp.py\", line 361, in start\n",
+      "    self.convert_notebooks()\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/nbconvert/nbconvertapp.py\", line 533, in convert_notebooks\n",
+      "    self.convert_single_notebook(notebook_filename)\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/nbconvert/nbconvertapp.py\", line 498, in convert_single_notebook\n",
+      "    output, resources = self.export_single_notebook(notebook_filename, resources, input_buffer=input_buffer)\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/nbconvert/nbconvertapp.py\", line 427, in export_single_notebook\n",
+      "    output, resources = self.exporter.from_filename(notebook_filename, resources=resources)\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/nbconvert/exporters/exporter.py\", line 186, in from_filename\n",
+      "    return self.from_file(f, resources=resources, **kw)\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/nbconvert/exporters/exporter.py\", line 204, in from_file\n",
+      "    return self.from_notebook_node(nbformat.read(file_stream, as_version=4), resources=resources, **kw)\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/jupyter_contrib_nbextensions/nbconvert_support/embedhtml.py\", line 92, in from_notebook_node\n",
+      "    self.replfunc(n)\n",
+      "  File \"/opt/conda/lib/python3.9/site-packages/jupyter_contrib_nbextensions/nbconvert_support/embedhtml.py\", line 54, in replfunc\n",
+      "    with open(filename, 'rb') as f:\n",
+      "FileNotFoundError: [Errno 2] No such file or directory: 'interval-tree.png?5'\n"
      ]
     }
    ],
@@ -515,7 +538,7 @@
    "id": "2fe8cfff",
    "metadata": {},
    "source": [
-    "<img src=\"interval-tree.png\" />"
+    "<img src=\"interval-tree.png?5\" />"
    ]
   },
   {
@@ -653,7 +676,7 @@
    "id": "ff1577ef",
    "metadata": {},
    "source": [
-    "<img src=\"bigger-no-aug.png\" />"
+    "<img src=\"bigger-no-aug.png?2\" />"
    ]
   },
   {
@@ -665,7 +688,7 @@
     }
    },
    "source": [
-    "<img src=\"bigger.png\" />"
+    "<img src=\"bigger.png?7\" />"
    ]
   },
   {
@@ -710,7 +733,7 @@
     }
    },
    "source": [
-    "<img src=\"bigger.png\" />"
+    "<img src=\"bigger.png?7\" />"
    ]
   },
   {
@@ -757,7 +780,7 @@
     }
    },
    "source": [
-    "<img src=\"bigger.png\" />"
+    "<img src=\"bigger.png?7\" />"
    ]
   },
   {
@@ -954,7 +977,7 @@
     }
    },
    "source": [
-    "<img src=\"pathological-it.png\" />"
+    "<img src=\"pathological-it.png?5\" />"
    ]
   },
   {
@@ -1104,7 +1127,7 @@
    "id": "b5423c65",
    "metadata": {},
    "source": [
-    "<img src=\"bigger-no47.png\" />"
+    "<img src=\"bigger-no47.png?2\" />"
    ]
   },
   {
@@ -1142,7 +1165,7 @@
     }
    },
    "source": [
-    "<img src=\"bigger.png\" />"
+    "<img src=\"bigger.png?7\" />"
    ]
   },
   {
@@ -1234,7 +1257,7 @@
     }
    },
    "source": [
-    "<img src=\"bigger.png\" />"
+    "<img src=\"bigger.png?7\" />"
    ]
   },
   {
@@ -1335,7 +1358,7 @@
     }
    },
    "source": [
-    "<img src=\"bigger-no27.png\" />"
+    "<img src=\"bigger-no27.png?1\" />"
    ]
   },
   {
