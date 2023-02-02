@@ -2,9 +2,7 @@
 #define IN_CLASS_BOOK_H
 
 #include <string>
-#include <sstream>
 using std::string;
-using std::stringstream;
 
 class Book {
 private:

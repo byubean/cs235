@@ -14,3 +14,9 @@ add_executable(scope_demo
 
 add_executable(grow
         assignments/grow.cpp)
+
+add_executable(book_demo
+        lecture-2023-01-24-classes/book_demo.cpp lecture-2023-01-24-classes/Book.cpp)
+
+add_executable(hello_demo
+        lecture-2023-01-24-classes/Demo.cpp)

@@ -1,11 +1,12 @@
-//
-// Created by Gordon Bean on 1/17/23.
-//
-
 #include "Book.h"
+#include <sstream>
+#include <string>
+using std::stringstream;
+using std::string;
+
 
 string Book::getTitle() const {
-    return this->title;
+    return title;
 }
 
 string Book::getAuthor() const {
@@ -18,6 +19,6 @@ int Book::getYear() const {
 
 string Book::str() const {
     stringstream ss;
-    ss << this->title << " " << this->author << " " << this->year;
+    ss << this->getTitle() << " " << this->getAuthor() << " written in " << this->getYear();
     return ss.str();
 }
