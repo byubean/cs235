@@ -20,3 +20,10 @@ add_executable(book_demo
 
 add_executable(hello_demo
         lecture-2023-01-24-classes/Demo.cpp)
+
+add_executable(list_demo
+        lecture-2023-02-07-linked-list/list_demo.cpp)
+
+add_executable(sumto
+        lecture-2023-02-23-recursion/sumto.cpp)
+
