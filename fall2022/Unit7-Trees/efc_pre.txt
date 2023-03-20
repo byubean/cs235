@@ -1,0 +1,5 @@
+E < F
+E > C
+C < D
+C > B
+B > A
